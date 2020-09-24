@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tiny Tim</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<!-- BOOTSTRAP 3 CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;450;500;600;700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	@font-face { font-family: beon; src: url('{% static 'beon.ttf' %}'); } 
+</style>
+
+
+</head>
+
+<body>
+
+<div class="loader">
+	<h4><img src="logo.gif"></h4>
+</div>
+
+<div class="navbar navbar-desktop col-xs-12">
+	<div class="logo col-xs-2">
+		<a href="/"><img src="logo.gif"></a>
+	</div>
+	<div class="links col-xs-8">
+		<p>
+			<a href="#"> FRONT PAGE </a>
+			<a href="#"> ABOUT </a>
+			<a href="#"> THE GAME </a>
+		</p>
+	</div>
+	<div class="cart col-xs-2">
+		
+	</div>
+</div>
+
+
+<div class="main col-xs-12" style="background-image: url('texture.jpg')">
+	<div class="col-xs-12 col-md-3"></div>
+	<div class="info col-xs-12 col-md-6">
+		<h1>Welcome to the TinyTIM WWW Page!</h1>
+		<br><br><br>
+		<h4>Commonly known as our HTML Resource, or, simply, "Owen's Brother, Phil"</h4>
+		<p>This site is provided as a service to help people who have had their interaction with the Internet reduced to a series of Icon Clicking and moving a little bar around. It's time to expand your horizons with TinyTIM!
+TinyTIM is the world's oldest running MUSH (Multi-User Shared Hallucination), over 18 years old. It's a lot of fun and beats getting run over by a car.
+
+To get more pages and stuff, simply choose one of the following three areas and follow the link that best describes what's going through your mind at the moment. Nothing could be easier!</p>
+		<br><br><br>
+		<h4>Never used TinyTIM</h4>
+		<p>"I've never used TinyTIM before. I was sure this was going to be a WWW page about the singer! Where's "Tiptoe through the Tulips" in .au form? Oh, well. What the hell is this TinyTIM thing? What are MUSHes? Where am I?"</p>
+		<br><br><br>
+		<h4>Used TinyTIM, want to expand experience</h4>
+		<p>"Of course I use TinyTIM! Everybody uses TinyTIM! Some people are even using TinyTIM right now! TinyTIM is one of the basic four food groups. What I really want is to expand my addiction to TinyTIM by getting pictures, sounds, and blurbs about my all-time favorite Internet Experience and its well-read wizards... and then I'll get the t-shirt."</p>
+		<br><br><br>
+		<h4>Clicks on random icons in WWW pages</h4>
+		<p>"Uh, I'm looking for weather maps of Africa."</p>
+		<br><br><br>
+		<button>PLAY THE GAME</button>
+		<br><br><br>
+	</div>
+	<div class="col-xs-12 col-md-3"></div>
+</div>
+
+<script type="text/javascript">
+function scrollListener(){
+	if($(document).scrollTop() > a && !window.location.pathname.includes("artists"))
+	{   
+		$('.navbar').css({"background-color":"rgba(0,0,0,.5)"});
+		$('.navbar.a').css({"color":"white"});
+	} else {
+		$('.navbar').css({"background-color":"rgba(0,0,0,0)"});
+		$('.navbar.a').css({"color":"black"});
+	}
+};
+
+$(document).scroll(scrollListener);
+
+function loader() {
+	$(".loader").fadeIn(500);
+};
+function pop_up(pop_up_name){
+	$("#"+pop_up_name).toggleClass("hidden");
+};
+
+
+
+$( document ).ready(function() {
+	$(".loader").fadeOut(600);
+});
+</script>
+
+</body>
+
+</html>
